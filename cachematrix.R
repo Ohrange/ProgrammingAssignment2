@@ -4,7 +4,10 @@
 
 ## This function takes an invertible matrix as its input. It contains a place to
 ## store the original matrix (x) and the inverse (inv) and a list of functions to set 
-## and retrieve the cached values. 
+## and retrieve the cached values. The get and getinverse functions expect no input and return the
+## original matrix and its inverse, respectively. The set function expects an invertible matrix and
+## will reset the cache. The setinverse function expects the inverse of the original matrix, 
+## calculated by the cacheSolve function.
 
 makeCacheMatrix <- function(x = matrix()) {
   inv = NULL
